@@ -1,42 +1,42 @@
-.root { }
+.root {}
 
 .tabList {
-  display: flex;
-  gap: 2px;
-  border-bottom: 2px solid #E2E8F0;
-  margin-bottom: 0;
+    display: flex;
+    gap: 2px;
+    border-bottom: 2px solid #E2E8F0;
+    margin-bottom: 0;
 }
 
 .tab {
-  padding: 8px 16px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  border-bottom: 2px solid transparent;
-  margin-bottom: -2px;
-  font-family: inherit;
-  border-radius: 6px 6px 0 0;
-  transition: color 0.15s, border-color 0.15s;
+    padding: 8px 16px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    font-family: inherit;
+    border-radius: 6px 6px 0 0;
+    transition: color 0.15s, border-color 0.15s;
 }
 
 .tab[data-state='active'] {
-  border-bottom-color: #0F4C81;
-  background: #F8FAFC;
+    border-bottom-color: #0F4C81;
+    background: #F8FAFC;
 }
 
 .tab[data-state='active'] .tabInner {
-  color: #0F4C81;
+    color: #0F4C81;
 }
 
 .tabInner {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  font-size: 13px;
-  font-weight: 500;
-  color: #64748B;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #64748B;
 }
 
 .content {
-  padding-top: 16px;
+    padding-top: 16px;
 }

@@ -1,369 +1,392 @@
 /* ── App Shell ── */
 
 .root {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background: #F1F5F9;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #F1F5F9;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    overflow: hidden;
 }
 
 /* ── App Bar ── */
 
 .appBar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
-  height: 52px;
-  background: #ffffff;
-  border-bottom: 1px solid #E2E8F0;
-  flex-shrink: 0;
-  gap: 16px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 52px;
+    background: #ffffff;
+    border-bottom: 1px solid #E2E8F0;
+    flex-shrink: 0;
+    gap: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 .appBarLeft {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex: 1;
-  min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+    min-width: 0;
 }
 
 .appLogo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
 }
 
 .logoIcon {
-  color: #0F4C81;
+    color: #0F4C81;
 }
 
 .logoText {
-  font-size: 15px;
-  font-weight: 800;
-  color: #0F4C81;
-  letter-spacing: 0.08em;
+    font-size: 15px;
+    font-weight: 800;
+    color: #0F4C81;
+    letter-spacing: 0.08em;
 }
 
 .logoSub {
-  font-size: 11px;
-  color: #94A3B8;
-  font-weight: 500;
-  white-space: nowrap;
+    font-size: 11px;
+    color: #94A3B8;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
 .scenarioMeta {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex: 1;
-  min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    min-width: 0;
 }
 
 .scenarioNameInput {
-  flex: 1;
-  max-width: 280px;
-  margin: 0;
+    flex: 1;
+    max-width: 280px;
+    margin: 0;
 }
 
 .savedNotif {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 12px;
-  font-weight: 600;
-  color: #22C55E;
-  animation: fadeIn 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #22C55E;
+    animation: fadeIn 0.3s ease;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-4px); }
-  to { opacity: 1; transform: none; }
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .appBarRight {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
 }
 
 /* ── Main Layout ── */
 
 .layout {
-  display: flex;
-  flex: 1;
-  overflow: hidden;
+    display: flex;
+    flex: 1;
+    overflow: hidden;
 }
 
 /* ── Sidebar ── */
 
 .sidebar {
-  width: 240px;
-  flex-shrink: 0;
-  background: #ffffff;
-  border-right: 1px solid #E2E8F0;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+    width: 240px;
+    flex-shrink: 0;
+    background: #ffffff;
+    border-right: 1px solid #E2E8F0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 .sidebarHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 14px;
-  border-bottom: 1px solid #F1F5F9;
-  font-size: 12px;
-  font-weight: 600;
-  color: #475569;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 14px;
+    border-bottom: 1px solid #F1F5F9;
+    font-size: 12px;
+    font-weight: 600;
+    color: #475569;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
 
 .scenarioList {
-  flex: 1;
-  overflow-y: auto;
-  padding: 6px;
+    flex: 1;
+    overflow-y: auto;
+    padding: 6px;
 }
 
 .emptySidebar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  padding: 32px 16px;
-  text-align: center;
-  color: #94A3B8;
-  font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 32px 16px;
+    text-align: center;
+    color: #94A3B8;
+    font-size: 12px;
 }
 
-.emptyIcon { color: #CBD5E1; }
+.emptyIcon {
+    color: #CBD5E1;
+}
 
 .scenarioItem {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  padding: 10px;
-  border-radius: 7px;
-  cursor: pointer;
-  transition: background 0.12s;
-  border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background 0.12s;
+    border: 1px solid transparent;
 }
 
 .scenarioItem:hover {
-  background: #F8FAFC;
+    background: #F8FAFC;
 }
 
 .activeItem {
-  background: #EFF6FF;
-  border-color: #BFDBFE;
+    background: #EFF6FF;
+    border-color: #BFDBFE;
 }
 
 .scName {
-  font-size: 13px;
-  font-weight: 600;
-  color: #1E293B;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1E293B;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .scMeta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
 }
 
 .scDate {
-  font-size: 10.5px;
-  color: #94A3B8;
+    font-size: 10.5px;
+    color: #94A3B8;
 }
 
 .scActions {
-  display: flex;
-  gap: 4px;
-  opacity: 0;
-  transition: opacity 0.15s;
+    display: flex;
+    gap: 4px;
+    opacity: 0;
+    transition: opacity 0.15s;
 }
 
 .scenarioItem:hover .scActions {
-  opacity: 1;
+    opacity: 1;
 }
 
 .scBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 22px;
-  height: 22px;
-  border: none;
-  background: transparent;
-  color: #94A3B8;
-  cursor: pointer;
-  border-radius: 3px;
-  transition: background 0.1s, color 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border: none;
+    background: transparent;
+    color: #94A3B8;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background 0.1s, color 0.1s;
 }
 
 .scBtn:hover {
-  background: #F1F5F9;
-  color: #1E293B;
+    background: #F1F5F9;
+    color: #1E293B;
 }
 
 /* ── Main Workspace ── */
 
 .main {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 /* ── Step Navigation ── */
 
 .stepNav {
-  display: flex;
-  align-items: center;
-  background: #ffffff;
-  border-bottom: 1px solid #E2E8F0;
-  padding: 0 16px;
-  overflow-x: auto;
-  flex-shrink: 0;
-  scrollbar-width: none;
-  gap: 2px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-bottom: 1px solid #E2E8F0;
+    padding: 0 16px;
+    overflow-x: auto;
+    flex-shrink: 0;
+    scrollbar-width: none;
+    gap: 2px;
 }
 
-.stepNav::-webkit-scrollbar { display: none; }
+.stepNav::-webkit-scrollbar {
+    display: none;
+}
 
 .stepBtn {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 11px 14px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 12.5px;
-  font-weight: 500;
-  color: #64748B;
-  border-bottom: 2px solid transparent;
-  margin-bottom: -1px;
-  white-space: nowrap;
-  transition: color 0.15s, border-color 0.15s;
-  position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 11px 14px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: #64748B;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    white-space: nowrap;
+    transition: color 0.15s, border-color 0.15s;
+    position: relative;
 }
 
 .stepBtn:hover {
-  color: #1E293B;
-  background: #F8FAFC;
+    color: #1E293B;
+    background: #F8FAFC;
 }
 
 .stepActive {
-  color: #0F4C81;
-  border-bottom-color: #0F4C81;
-  font-weight: 600;
+    color: #0F4C81;
+    border-bottom-color: #0F4C81;
+    font-weight: 600;
 }
 
 .stepDone {
-  color: #22C55E;
+    color: #22C55E;
 }
 
 .stepIconWrap {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .stepLabel {
-  flex: 1;
+    flex: 1;
 }
 
 .doneCheck {
-  color: #22C55E;
+    color: #22C55E;
 }
 
 /* ── Step Content ── */
 
 .stepContent {
-  flex: 1;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .stepContentHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 20px;
-  background: #ffffff;
-  border-bottom: 1px solid #F1F5F9;
-  flex-shrink: 0;
-  gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    background: #ffffff;
+    border-bottom: 1px solid #F1F5F9;
+    flex-shrink: 0;
+    gap: 12px;
 }
 
 .stepHeaderLeft {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .stepHeaderIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  background: #EFF6FF;
-  border-radius: 8px;
-  color: #0F4C81;
-  flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: #EFF6FF;
+    border-radius: 8px;
+    color: #0F4C81;
+    flex-shrink: 0;
 }
 
 .stepTitle {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 700;
-  color: #0F172A;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #0F172A;
 }
 
 .stepDesc {
-  margin: 0;
-  font-size: 12px;
-  color: #94A3B8;
+    margin: 0;
+    font-size: 12px;
+    color: #94A3B8;
 }
 
 .stepNav2 {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
 }
 
 .stepCounter {
-  font-size: 12px;
-  color: #94A3B8;
-  font-weight: 500;
-  white-space: nowrap;
+    font-size: 12px;
+    color: #94A3B8;
+    font-weight: 500;
+    white-space: nowrap;
 }
 
 /* ── Module Container ── */
 
 .moduleContainer {
-  flex: 1;
-  overflow-y: auto;
-  padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
 }
 
 /* Scrollbar styling */
-.moduleContainer::-webkit-scrollbar { width: 6px; }
-.moduleContainer::-webkit-scrollbar-track { background: transparent; }
-.moduleContainer::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 3px; }
-.moduleContainer::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+.moduleContainer::-webkit-scrollbar {
+    width: 6px;
+}
+
+.moduleContainer::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.moduleContainer::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 3px;
+}
+
+.moduleContainer::-webkit-scrollbar-thumb:hover {
+    background: #94A3B8;
+}

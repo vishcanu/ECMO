@@ -1,124 +1,124 @@
 .monitor {
-  background: #0A0F1A;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 1px solid #1E293B;
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+    background: #0A0F1A;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #1E293B;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
 }
 
 /* Header */
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 16px;
-  background: #050A12;
-  border-bottom: 1px solid #1E293B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background: #050A12;
+    border-bottom: 1px solid #1E293B;
 }
 
 .headerLeft {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .bedLabel {
-  font-size: 11px;
-  font-weight: 700;
-  color: #FF9800;
-  letter-spacing: 0.1em;
-  background: rgba(255, 152, 0, 0.15);
-  padding: 2px 8px;
-  border-radius: 3px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #FF9800;
+    letter-spacing: 0.1em;
+    background: rgba(255, 152, 0, 0.15);
+    padding: 2px 8px;
+    border-radius: 3px;
 }
 
 .patientName {
-  font-size: 13px;
-  font-weight: 600;
-  color: #94A3B8;
-  letter-spacing: 0.06em;
+    font-size: 13px;
+    font-weight: 600;
+    color: #94A3B8;
+    letter-spacing: 0.06em;
 }
 
 .headerCenter {
-  flex: 1;
-  text-align: center;
+    flex: 1;
+    text-align: center;
 }
 
 .sysName {
-  font-size: 10px;
-  color: #334155;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+    font-size: 10px;
+    color: #334155;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
 }
 
 .headerRight {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1px;
 }
 
 .time {
-  font-size: 18px;
-  font-weight: 700;
-  color: #94A3B8;
-  letter-spacing: 0.05em;
+    font-size: 18px;
+    font-weight: 700;
+    color: #94A3B8;
+    letter-spacing: 0.05em;
 }
 
 .date {
-  font-size: 10px;
-  color: #475569;
+    font-size: 10px;
+    color: #475569;
 }
 
 /* Body */
 .body {
-  display: flex;
-  gap: 0;
+    display: flex;
+    gap: 0;
 }
 
 .waveformPanel {
-  flex: 1;
-  min-width: 0;
+    flex: 1;
+    min-width: 0;
 }
 
 .numericsPanel {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4px;
-  padding: 8px;
-  background: #070C15;
-  border-left: 1px solid #1E293B;
-  min-width: 280px;
-  align-content: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    padding: 8px;
+    background: #070C15;
+    border-left: 1px solid #1E293B;
+    min-width: 280px;
+    align-content: start;
 }
 
 /* Footer */
 .footer {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  padding: 6px 16px;
-  background: #050A12;
-  border-top: 1px solid #1E293B;
-  overflow-x: auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 6px 16px;
+    background: #050A12;
+    border-top: 1px solid #1E293B;
+    overflow-x: auto;
 }
 
 .footerItem {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
 }
 
 .footerLabel {
-  font-size: 9px;
-  color: #334155;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+    font-size: 9px;
+    color: #334155;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .footerValue {
-  font-size: 11px;
-  font-weight: 600;
+    font-size: 11px;
+    font-weight: 600;
 }
