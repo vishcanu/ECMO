@@ -1,0 +1,137 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Override the main app's overflow:hidden so this page can scroll */
+html, body, #root {
+  height: 100%;
+  overflow: auto !important;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  background: #F1F5F9;
+  min-height: 100vh;
+}
+
+.root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #F1F5F9;
+  overflow: hidden; /* header + tabbar fixed; panelWrap scrolls */
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: #0F4C81;
+  color: white;
+  flex-shrink: 0;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.headerIcon {
+  width: 38px;
+  height: 38px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.headerTitle {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.headerSub {
+  font-size: 11.5px;
+  color: rgba(255,255,255,0.65);
+  margin-top: 1px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.syncBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #86EFAC;
+  background: rgba(34,197,94,0.15);
+  border: 1px solid rgba(34,197,94,0.3);
+  padding: 5px 12px;
+  border-radius: 20px;
+  animation: fadeIn 0.2s ease;
+}
+@keyframes fadeIn { from { opacity: 0; transform: scale(0.92); } to { opacity: 1; transform: scale(1); } }
+
+/* Tab bar */
+.tabBar {
+  display: flex;
+  gap: 2px;
+  padding: 10px 20px 0;
+  background: #FFFFFF;
+  border-bottom: 1px solid #E2E8F0;
+  flex-shrink: 0;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 18px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748B;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 6px 6px 0 0;
+  transition: color 0.15s, background 0.15s;
+  position: relative;
+}
+.tab:hover { color: #1E293B; background: #F8FAFC; }
+
+.tabActive {
+  color: #0F4C81;
+  border-bottom-color: #0F4C81;
+  background: #F8FAFC;
+  font-weight: 600;
+}
+
+.activeIndicator {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22C55E;
+  flex-shrink: 0;
+}
+
+/* Panel content area */
+.panelWrap {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0; /* critical — lets flex child shrink below content size so scroll activates */
+  width: 100%;
+}
+
+/* inner content constraint */
+.panelWrap > * {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}

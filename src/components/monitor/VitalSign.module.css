@@ -1,0 +1,86 @@
+.vital {
+  background: #0A0F1A;
+  border: 1px solid #1E293B;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 100px;
+  transition: border-color 0.3s;
+}
+
+.vital.alarming {
+  border-color: rgba(255, 23, 68, 0.5);
+  animation: alarmBlink 1s ease-in-out infinite;
+}
+
+@keyframes alarmBlink {
+  0%, 100% { background: #0A0F1A; }
+  50% { background: rgba(255, 23, 68, 0.08); }
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 600;
+  color: #64748B;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+.trend {
+  display: flex;
+  align-items: center;
+}
+
+.valueRow {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.value {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.unit {
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.7;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+.subValue {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 11px;
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+/* Sizes */
+.sm .value { font-size: 18px; }
+.sm { padding: 6px 10px; }
+
+.md .value { font-size: 26px; }
+
+.lg .value { font-size: 34px; }
+.lg { padding: 14px 16px; }
+
+.pulseIcon {
+  animation: pulse 0.8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}

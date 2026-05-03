@@ -1,0 +1,92 @@
+.row {
+  border-bottom: 1px solid #F1F5F9;
+  transition: background 0.1s;
+}
+
+.row:hover {
+  background: #F8FAFC;
+}
+
+.criticalRow {
+  background: #FFF5F5;
+}
+
+.criticalRow:hover {
+  background: #FEE2E2;
+}
+
+.cellInput {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 6px 6px;
+  font-size: 12.5px;
+  color: #1E293B;
+  font-family: inherit;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.cellInput:focus {
+  background: #EFF6FF;
+  border-radius: 3px;
+}
+
+.resultInput {
+  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.unitInput {
+  color: #64748B;
+  font-size: 11.5px;
+}
+
+.rangeInput {
+  color: #94A3B8;
+  font-size: 11.5px;
+  width: 70px;
+}
+
+/* Flag coloring on result */
+.flag_high { color: #D97706; }
+.flag_low { color: #D97706; }
+.flag_critical_high { color: #DC2626; }
+.flag_critical_low { color: #DC2626; }
+
+.flagCell {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px;
+}
+
+.criticalIcon {
+  color: #DC2626;
+  animation: blink 1.2s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+
+.deleteBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  color: #CBD5E1;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.1s, color 0.1s;
+  margin: 0 auto;
+}
+
+.deleteBtn:hover {
+  background: #FEE2E2;
+  color: #EF4444;
+}
